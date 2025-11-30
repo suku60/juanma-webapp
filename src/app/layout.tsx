@@ -15,7 +15,7 @@ export default function RootLayout({
   const lang = 'es'
 
   return (
-    <html lang={lang}
+    <html lang={lang}>
       <body>
         {children}
       </body>
