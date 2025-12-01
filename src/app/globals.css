@@ -47,12 +47,12 @@ body {
 }
 
 #grid {
-  width: 100vw;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   justify-content: center;
+  height: 100%;
+  width: 100%
 }
 
 #grid .grid-item {
