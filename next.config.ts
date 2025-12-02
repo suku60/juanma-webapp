@@ -2,8 +2,8 @@
 
 const nextConfig = {
   output: "export",
-  basePath: "/juanma-webapp",
-  assetPrefix: "/juanma-webapp/"
+  basePath: "",
+  assetPrefix: ""
 };
 
 export default nextConfig;

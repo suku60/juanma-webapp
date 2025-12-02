@@ -58,7 +58,7 @@ body {
 #grid .grid-item {
   min-width: 100%;
   min-height: 100%;
-  background-color: white;
+  background-color: hsl(0, 0%, 13%);
   cursor: pointer;
   position: relative;
 }
@@ -70,12 +70,34 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  outline: 1px solid black;
+  outline: 1px solid rgba(255, 255, 255, 0);
   display: block;
+  transition: outline .2s;
 }
 
-#grid .grid-item:hover {
-  opacity: 0.8;
+#grid .grid-item:hover::after {
+  background-color: hsl(0, 0%, 13%);
+  transition: 0s;
+  mix-blend-mode: color-dodge;
+}
+#grid .grid-item.color::after {
+  outline: 1px solid hsla(0, 0%, 13%, 1);
+  transition: outline .2s;
+}
+
+#grid .grid-item.plain::after {
+  outline: 1px solid rgba(252, 252, 252, 0);  
+  transition: outline .2s;
+}
+
+#grid .grid-item p {
+  text-align: center;
+  line-height: 1;
+}
+
+#grid .grid-item.section img {
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
 }
 
 @media (prefers-color-scheme: dark) {
