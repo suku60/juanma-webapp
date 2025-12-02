@@ -127,7 +127,7 @@ export default function Home() {
               justifyContent: "center",
             }}
           >
-            {isButton && <Image alt="" height={20} width={20} src={`/assets/icons/${sections[i].type}.svg`} />}
+            {isButton && <Image alt="" height={20} width={20} src={`/juanma-webapp/assets/icons/${sections[i].type}.svg`} />}
             {isLangButton && <p>{isESlang ? 'es' : 'en'}</p>}
           </div>
         );
